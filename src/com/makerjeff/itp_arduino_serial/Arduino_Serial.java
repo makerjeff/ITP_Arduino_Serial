@@ -31,9 +31,13 @@ public class Arduino_Serial extends PApplet{
 	} 
 	
 	public void draw(){
-		
+		AnimateCircle();	
+	}
+	
+	//CUSTOM FUNCTIONS
+	//animata the circle
+	public void AnimateCircle(){
 		clear();
-		
 		background(colors[0]);
 		fill(colors[1]);
 		
@@ -43,8 +47,7 @@ public class Arduino_Serial extends PApplet{
 		
 		ellipse(xPos, height*0.5f, diameter, diameter);
 		xPos += 2;
-
-		
-	}
-
+	} 
 }
+
+
